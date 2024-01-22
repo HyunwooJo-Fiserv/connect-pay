@@ -7,9 +7,9 @@ Update here
 while we know you have various ways to integrate, we are here to assist you in integrating with us here at Fiserv. If you have 
 [//]: <> (You will want to step through the integration process. You will need to create paths that are common for any and all merchants. Where there are differences, we will want to fork them using sub steps with ### instead of the ## for category headings. But, it will be necessary to understand the actual process first.)
 # API Integration
-## Step 1 - Create a Profile 
-[//]: <> (Include in this create session token)
-## Step 2 - Encryption
+## Step 1 - Create Session Token 
+## Step 2 - AES Key & IV Generation
+## Step 3 - Encryption & Decryption Methods
 ### AES Encryption
 | Type | Value            | 
 |------|------------------|
@@ -134,18 +134,35 @@ return cipher.doFinal(bytes);
 }
 
 ```
-## Step 3
-## Step 4
-## Step 5
-## Step 6
-## Step 7
-## Step 8
-## Step 9
-## Step 10
+### RSA Encryption
+```java
+
+```
+## Step 4 - Create Consumer Profile
+## Step 5a - Online Bank Login
+### Step 1 - Online Bank Login Establish
+### Step 2 - Online Bank Login Validate
+### Step 3 - Consumer Enrollment
+## Step 5b - Manual Enrollment
+### Step 1 - Consumer Enrollment
+### Step 2 - Consumer Micro Deposit Validation
+## Step 7 - ACH Transactions
+## Other REST API Calls
 
 # SDK Integration
-## IOS
-## Android
+## SDK types
+### IOS
+### Android
+### Website
+## Step 1 - Create Session Token
+## Step 2 - AES Key & IV Generation
+## Step 3 - Encryption & Decryption Methods
+## Step 4 - Create Consumer Profile
+## Step 5 - Integrate SDK
+### Step 1 - Download SDK
+### Step 2 - Integrate SDK into Merchant Codebase
+## Step 6 - ACH Transactions
+
 ## Other? 
 ### Useful Artifacts to help you Integrate
 [//]: <> (Need to link below to the actual files)
