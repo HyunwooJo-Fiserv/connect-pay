@@ -119,8 +119,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-GetPublicKeyResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_GET_PUBLIC_KEY'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_GET_PUBLIC_KEY'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_GET_PUBLIC_KEY'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_GET_PUBLIC_KEY'
         '401':
-          $ref: '#/components/responses/401-GetPublicKeyResponsePayloadSample'
+          $ref: '#/components/responses/401-CPAPI_GET_PUBLIC_KEY'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_GET_PUBLIC_KEY'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_GET_PUBLIC_KEY'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_GET_PUBLIC_KEY'
   '/security/getdata':
     post:
       x-proxy-name: Get Data
@@ -149,8 +163,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-GetDataResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_GET_DATA'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_GET_DATA'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_GET_DATA'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_GET_DATA'
         '401':
-          $ref: '#/components/responses/401-ComponentFallbackPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_GET_DATA'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_GET_DATA'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_GET_DATA'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_GET_DATA'
   '/onlinebanklogin/establish':
     post:
       x-proxy-name: Establish
@@ -177,8 +205,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-EstablishResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_BANK_ESTABLISH'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_BANK_ESTABLISH'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_BANK_ESTABLISH'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_BANK_ESTABLISH'
         '401':
-          $ref: '#/components/responses/401-AuthenticationErrorPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_BANK_ESTABLISH'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_BANK_ESTABLISH'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_BANK_ESTABLISH'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_BANK_ESTABLISH'
   '/onlinebanklogin/validate':
     post:
       x-proxy-name: Validate
@@ -205,8 +247,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-ValidateResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_BANK_VALIDATE'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_BANK_VALIDATE'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_BANK_VALIDATE'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_BANK_VALIDATE'
         '401':
-          $ref: '#/components/responses/401-ComponentFallbackPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_BANK_VALIDATE'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_BANK_VALIDATE'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_BANK_VALIDATE'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_BANK_VALIDATE'
   '/consumerprofile/add':
     post:
       x-proxy-name: Add
@@ -233,8 +289,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-ProfileAddResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_CUSTOMER_ADD'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_CUSTOMER_ADD'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_CUSTOMER_ADD'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_CUSTOMER_ADD'
         '401':
-          $ref: '#/components/responses/401-ComponentFallbackPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_CUSTOMER_ADD'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_CUSTOMER_ADD'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_CUSTOMER_ADD'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_CUSTOMER_ADD'
   '/consumerprofile/enrollment':
     post:
       x-proxy-name: Enrollment
@@ -261,8 +331,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-EnrollmentResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_ENROLLMENT'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_ENROLLMENT'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_ENROLLMENT'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_ENROLLMENT'
         '401':
-          $ref: '#/components/responses/401-ComponentFallbackPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_ENROLLMENT'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_ENROLLMENT'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_ENROLLMENT'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_ENROLLMENT'
   '/account/getaccountlist':
     post:
       x-proxy-name: Get Account List
@@ -289,8 +373,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-GetAccountListResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_GET_ACCOUNT_LIST'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_GET_ACCOUNT_LIST'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_GET_ACCOUNT_LIST'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_GET_ACCOUNT_LIST'
         '401':
-          $ref: '#/components/responses/401-ComponentFallbackPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_GET_ACCOUNT_LIST'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_GET_ACCOUNT_LIST'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_GET_ACCOUNT_LIST'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_GET_ACCOUNT_LIST'
   '/account/getaccountdetails':
     post:
       x-proxy-name: Get Account Details
@@ -317,8 +415,22 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/200-GetAccountDetailsResponsePayloadSamples'
+        '201':
+          $ref: '#/components/responses/201-CPAPI_GET_ACCOUNT_DETAILS'
+        '202':
+          $ref: '#/components/responses/202-CPAPI_GET_ACCOUNT_DETAILS'
+        '204':
+          $ref: '#/components/responses/204-CPAPI_GET_ACCOUNT_DETAILS'
+        '400':
+          $ref: '#/components/responses/400-CPAPI_GET_ACCOUNT_DETAILS'
         '401':
-          $ref: '#/components/responses/401-ComponentFallbackPayloadSample'
+          $ref: '#/components/responses/401-CPAPI_GET_ACCOUNT_DETAILS'
+        '403':
+          $ref: '#/components/responses/403-CPAPI_GET_ACCOUNT_DETAILS'
+        '409':
+          $ref: '#/components/responses/409-CPAPI_GET_ACCOUNT_DETAILS'
+        '500':
+          $ref: '#/components/responses/500-CPAPI_GET_ACCOUNT_DETAILS'
   '/transaction/purchase':
     post:
       x-proxy-name: Purchase
@@ -2019,15 +2131,15 @@ components:
                   errorCode: nan
                   errorField: nan
                   errorReason: nan
-    #This is a seperate pathway, do not worry about this response example below
+    # This is a seperate pathway, do not worry about this response example below
     401-AuthenticationErrorPayloadSample:
       description: |
         ### HTTP 401 Response.
         #### Authentication error. Probably due to incorrect Authorization header calculation.
-    #This is the start of the ___ response examples
+    # This is the start of the Get Public Key response examples
     200-GetPublicKeyResponsePayloadSamples:
       description: |
-        ### HTTP 200 Response.
+        Success
       content:
         application/json:
           schema:
@@ -2045,30 +2157,76 @@ components:
                   publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAofzBBruWDxHCbSJaWY4hq8THqo/MxrRCMhJlDg45MIFoQe7UaX84DlzMOfTyUmwAy7sOoKIz9SIEOknOgrIOks37gsPYivkgHxbkr1Z7cGgQy8qZTPk5/8QH4M/SJTx8hpGF56NLRNcvgm1bvpmgfg9KwvxvIHDT/7lS7TxLkbO+WPe+OtljovYivRMPJJSoBrtTHmCO4ep3ipYFxrAkSGmeBQANsza7/g7nI8kt23w6C9TDRfoVdsgY56IcH69GqqVKI6kRVmKauxWdCUrfbY516zD8tt1THn5196Xjgo/oCHYk5JEuznWhqueTiO5SkSB6bvj8hnNZYrB4Uhd8KwIDAQAB
                   algorithm: RSA/None/OAEPWithSHA512AndMGF1Padding
                   status: ACTIVE
-            ResponsePayloadSample-Declined:
-              value:
+    201-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4500-PartnerID:
+              value: 
                 transactionStatus: DECLINED
                 transactionStatusCode: 450
-                referenceTransactionID: 0021-24efedc1-8764-b930-7f84-47ce4b463433
+                referenceTransactionID: 1d37d250-3d06-b248-6249-2240db552014
                 transactionStatusDescription: Partner Not Found
-                errorDetails:
-                  errorCode: 4550
+                errorDetails: 
+                  errorCode: 4500
                   errorField: PartnerID
                   errorReason: PartnerID not Found
-            ResponsePayloadSample-Error:
-              value:
+    401-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: 285c0e59-d4c7-2cd5-4015-b0b1331291c2
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        Forbidden
+    409-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_GET_PUBLIC_KEY:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5112-UCOMM_GET_PUBLIC_KEY:
+              value: 
                 transactionStatus: ERROR
-                transactionStatusCode: 100
-                referenceTransactionID: 0021-24efedc1-8764-b930-7f84-47ce4b463433
-                transactionStatusDescription: Input is invalid
-                errorDetails:
-                  errorCode: 1060
-                  errorField: Content-Type
-                  errorReason: Required Header field is missing
-    401-GetPublicKeyResponsePayloadSample:
-      description: |
-        ### HTTP 401 Response.
-        #### Authentication error. Probably due to incorrect Authorization header calculation.
+                transactionStatusCode: 500
+                referenceTransactionID: 99a07ba4-7d02-cd5a-a025-96d1edb37bac
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5112
+                  errorField: UCOMM_GET_PUBLIC_KEY
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+    # This is the start of establish bank login
     200-EstablishResponsePayloadSamples:
       description: The request cannot be validated.
       content:
@@ -2117,8 +2275,448 @@ components:
                   errorCode: 1035
                   errorField: CallType
                   errorReason: Required field is missing
+    201-CPAPI_BANK_ESTABLISH:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_BANK_ESTABLISH:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_BANK_ESTABLISH:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_BANK_ESTABLISH:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1010-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 882e0479-892d-641d-aba3-d0cbb79b9e02
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: type
+                  errorReason: Field did not have a valid format
+            1010-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 79ce27a5-a146-dea9-9640-4c4a8cba59cd
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: fdCustomerID
+                  errorReason: Field did not have a valid format
+            1010-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 370e80d8-2b37-7123-6a3a-29db568597d1
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: PassPhase
+                  errorReason: Field did not have a valid format
+            1010-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d379e8a6-2918-1730-a249-1568ba12c200
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: InitializationVector
+                  errorReason: Field did not have a valid format
+            1010-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 89d1cb52-a8ec-6e85-0a38-60d228a6aa0c
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: adapter
+                  errorReason: Field did not have a valid format
+            1020-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 68300d70-ac45-de6e-66a2-2ba3ede389ab
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: fdCustomerID
+                  errorReason: Field contained a bad value
+            1020-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d25086e0-0dec-e94c-e027-e890611672b9
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: type
+                  errorReason: Field contained a bad value
+            1020-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 239b0415-4a65-bde0-a9b3-31581d7b360d
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: PassPhase
+                  errorReason: Field contained a bad value
+            1020-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 079ac5e9-51de-3442-690c-aaa95c2b12cc
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: InitializationVector
+                  errorReason: Field contained a bad value
+            1020-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 4d1e52c6-002d-873c-92a0-5470d2c55145
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: adapter
+                  errorReason: Field contained a bad value
+            1030-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 4b09a0a5-7abb-7166-0ba4-981629bc8b60
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: type
+                  errorReason: Required field did not have a value
+            1030-CallType:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 879a931d-d238-ee50-3379-42122c9b0c0c
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: CallType
+                  errorReason: Required field did not have a value
+            1030-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 3e9b7a9d-dbbb-c753-d4a1-81a02c3325a7
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdCustomerID
+                  errorReason: Required field did not have a value
+            1030-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: dec427cd-57cc-5277-52b7-802ad4d2d8b1
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: PassPhase
+                  errorReason: Required field did not have a value
+            1030-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: ec252c74-0260-4ac9-a4d5-cd32019d519d
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: InitializationVector
+                  errorReason: Required field did not have a value
+            1030-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2928d20b-ead2-c4c5-3872-543ac9acc9c2
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: adapter
+                  errorReason: Required field did not have a value
+            1030-AllDataSessionId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1e93cee1-bbee-4cdc-2c98-55102581e759
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: AllDataSessionId
+                  errorReason: Required field did not have a value
+            1035-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 91e23721-6359-3688-0151-5b2ebe87ae47
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: type
+                  errorReason: Required field is missing
+            1035-CallType:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b629a39d-4302-3ce9-0b59-d229a541a7a3
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: CallType
+                  errorReason: Required field is missing
+            1035-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 11b78269-2139-8b52-8895-033588c303d4
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdCustomerID
+                  errorReason: Required field is missing
+            1035-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a1c06bce-640e-e538-84e4-56da5889eeaa
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: PassPhase
+                  errorReason: Required field is missing
+            1035-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: c1dd3b67-28ce-7290-d19c-bec56d16c157
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: InitializationVector
+                  errorReason: Required field is missing
+            1035-allData:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 247d15bc-01e1-d387-2701-c74e2ae12ac5
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: allData
+                  errorReason: Required Block is missing
+            1035-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b9702d34-ed2b-1860-48b0-6418456eedb0
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: adapter
+                  errorReason: Required Block is missing
+            1040-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 798b0ca0-0212-08c5-c6bb-3d825750162e
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: customer
+                  errorReason: Required block did not have a value
+            1040-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: c8910e58-a274-496a-4202-73247c12cb1b
+                transactionStatusDescription: Required block did not have a value
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: adapter
+                  errorReason: Required block did not have a value
+            1045-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: aca2d5dd-8a98-62db-5171-45eab7016520
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: customer
+                  errorReason: Required block is missing
+            1045-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: c6cbaa12-cb42-1318-e063-8ca9907c72a4
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: account
+                  errorReason: Required block is missing
+            1060-PartnerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1e885b54-761c-cd36-247c-5140e3ccd998
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: PartnerID
+                  errorReason: Required Header Field is missing
+            1060-SubscriberId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a748d5ca-4bad-231d-5ad7-6baa9bb5995d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: SubscriberId
+                  errorReason: Required Header Field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a3222b79-05ab-3d94-a8ab-a744e789cc48
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            1080-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 50aa3127-5ab2-8cbc-e24d-94ca9926785a
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1080
+                  errorField: account
+                  errorReason: Block contain values more than that is allowed
+            2220-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 140
+                referenceTransactionID: 515854d2-6c16-1d2e-7d51-d9aa179e625b
+                transactionStatusDescription: Customer profile not found
+                errorDetails: 
+                  errorCode: 2220
+                  errorField: fdCustomerID
+                  errorReason: Customer profile not found
+            2220-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 140
+                referenceTransactionID: a8aec5e3-aabe-d0c7-659d-7968b5142b6b
+                transactionStatusDescription: Customer profile not found
+                errorDetails: 
+                  errorCode: 2220
+                  errorField: fdCustomerID
+                  errorReason: Customer profile not found
+            4250-Client-Token:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 420
+                referenceTransactionID: cc4890d3-9d0d-6478-7a12-e5a6d4e1be0c
+                transactionStatusDescription: Unauthorized
+                errorDetails: 
+                  errorCode: 4250
+                  errorField: Client-Token
+                  errorReason: Session time out
+            4410-alldatanotenabled:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 440
+                referenceTransactionID: de5ce914-de2e-38ca-8062-a9e506ba16ce
+                transactionStatusDescription: Other Telecheck Decline
+                errorDetails: 
+                  errorCode: 4410
+                  errorField: alldatanotenabled
+                  errorReason: alldatanotenabled
+            4500-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 450
+                referenceTransactionID: 370ace72-c5cb-738c-1b1c-a68b4188070d
+                transactionStatusDescription: Partner Not Found
+                errorDetails: 
+                  errorCode: 4500
+                  errorField: PartnerID
+                  errorReason: PartnerID not Found
+    401-CPAPI_BANK_ESTABLISH:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: 4e0a24d4-e351-537a-6e84-0b35c70c7312
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_BANK_ESTABLISH:
+      description: | 
+        Forbidden
+    409-CPAPI_BANK_ESTABLISH:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_BANK_ESTABLISH:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5110-UCOMM_CLEAR_DATA:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: ac751a3e-decd-84b3-2a44-e8a45a5005ea
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5110
+                  errorField: UCOMM_CLEAR_DATA
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5340-PublicKeyExpired:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: b4b4ec1a-e216-b61d-7a06-1ad8a9b307ba
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PublicKey Expired
+                  errorReason: Configuration Error, Please contact customer support
+    # This is the start of validate bank login
     200-ValidateResponsePayloadSamples:
-      description: The request cannot be validated.
+      description: Success
       content:
         application/json:
           schema:
@@ -2149,39 +2747,469 @@ components:
                       onlineBankTransactionId: 1002536270
                     userPhone:
                       - number : 9876543212
-            ResponsePayloadSample-Declined:
-              value:
-                transactionStatus: DECLINED
-                transactionStatusCode: 440
-                referenceTransactionID: bbb59fe8-492f-9c53-3a30-73637cb2d7d9
-                transactionStatusDescription: Other Telecheck Decline
-                responseVerbiage: Other Telecheck Decline
-                errorDetails:
-                  errorCode: 4410
-                  errorField: OnlineBankTransactionId
-                  errorReason: Field contained a bad value
-            ResponsePayloadSample-Error:
-              value:
+    201-CPAPI_BANK_VALIDATE:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+          examples: 
+    202-CPAPI_BANK_VALIDATE:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_BANK_VALIDATE:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_BANK_VALIDATE:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1010-fdCustomerID:
+              value: 
                 transactionStatus: ERROR
                 transactionStatusCode: 100
-                referenceTransactionID: 906c517e-5570-4286-86c2-33dc3e0d18cc
+                referenceTransactionID: cb8b7282-2c42-265e-7cb6-b972847d9374
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: fdCustomerID
+                  errorReason: Field did not have a valid format
+            1010-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 4ae40620-7c63-e674-c40d-82d84a9bba9c
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: type
+                  errorReason: Field did not have a valid format
+            1010-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1ebc1165-3aa1-668a-1ab1-3536305b17be
                 transactionStatusDescription: Input is invalid
-                errorDetails:
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: PassPhase
+                  errorReason: Field did not have a valid format
+            1010-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: ab06086c-2691-5687-9c2b-7b479365935d
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: InitializationVector
+                  errorReason: Field did not have a valid format
+            1010-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 80d0cae2-4317-41d1-2095-a43195d48458
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: adapter
+                  errorReason: Field did not have a valid format
+            1020-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: e8277c5c-c458-4e29-3637-671a92849582
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: fdCustomerID
+                  errorReason: Field contained a bad value
+            1020-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2cecd076-6358-a33a-5493-27530a3b1d4a
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: type
+                  errorReason: Field contained a bad value
+            1020-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 64a85e52-6c6e-618e-86a1-569c3caab304
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: PassPhase
+                  errorReason: Field contained a bad value
+            1020-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 3e01c5e1-0787-dd45-51e1-c6a2846b9184
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: InitializationVector
+                  errorReason: Field contained a bad value
+            1020-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2853230e-639c-5d1d-040c-76a898b7d0b9
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: adapter
+                  errorReason: Field contained a bad value
+            1030-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 08c2cbcb-b022-dd93-955b-1e1ba54d34b5
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdCustomerID
+                  errorReason: Required field did not have a value
+            1030-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 4d0d7c0c-a948-24b9-27a7-ed504b28ec69
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: type
+                  errorReason: Required field did not have a value
+            1030-CallType:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 33be35b2-1461-5d3c-bd5d-76859c305ac8
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: CallType
+                  errorReason: Required field did not have a value
+            1030-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 968ee8a8-ace2-6702-93d2-8b2e5758d312
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: PassPhase
+                  errorReason: Required field did not have a value
+            1030-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 0d9b284b-2318-a55a-de1c-d9512226d96a
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: InitializationVector
+                  errorReason: Required field did not have a value
+            1030-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 73a7abb1-48ed-9ca6-c84c-de1433b536d4
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: adapter
+                  errorReason: Required field did not have a value
+            1030-AllDataSessionId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1bb7e953-644d-881a-ea36-98d1423d8d23
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: AllDataSessionId
+                  errorReason: Required field did not have a value
+            1035-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: bb4d9a67-3a67-7b3b-2eea-de182a45e904
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdCustomerID
+                  errorReason: Required field is missing
+            1035-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 87b4570b-7e11-e108-e071-60cbc69a59a5
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: type
+                  errorReason: Required field is missing
+            1035-CallType:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 06e8e947-9a92-9165-8dd8-7627b8e111d7
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
                   errorCode: 1035
                   errorField: CallType
                   errorReason: Required field is missing
-    401-ComponentFallbackPayloadSample:
-      description: The request cannot be validated.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/CPAPIGenericResponse'
-          examples:
-            ComponentFallbackPayloadSample:
-              value:
-                componentFallBack: "{\r\n  \"transactionStatus\" : \"DECLINED\",\r\n  \"transactionStatusCode\" : 420,\r\n  \"referenceTransactionID\" : \"APIGEE-a-90f-4946-ff14-36aa4b9a6325\",\r\n  \"transactionStatusDescription\" : \"Unauthorized\",\r\n  \"responseVerbiage\" : \"Unauthorized\",\r\n  \"errorDetails\" : [ {\r\n    \"errorCode\" : 4250,\r\n    \"errorField\" : \"Client-Token\",\r\n    \"errorReason\" : \"Session time out\"\r\n  } ]\r\n}"
+            1035-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2d1897b7-82ad-1c9e-c453-494d7b6a0730
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: PassPhase
+                  errorReason: Required field is missing
+            1035-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d55a3059-c047-3276-0589-4d1db2ed042c
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: InitializationVector
+                  errorReason: Required field is missing
+            1035-allData:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 195c7e91-d2ba-7b2a-1022-da088ae2a9a4
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: allData
+                  errorReason: Required Block is missing
+            1035-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: c00ea59a-2694-cd65-c79e-e04e294c7192
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: adapter
+                  errorReason: Required Block is missing
+            1040-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b20a6d4d-7530-3421-e730-5aeb9307d7ed
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: customer
+                  errorReason: Required block did not have a value
+            1040-adapter:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d886c9d3-4547-c4b4-63e1-5743b50da1c4
+                transactionStatusDescription: Required block did not have a value
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: adapter
+                  errorReason: Required block did not have a value
+            1045-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 982ecdba-a878-6425-094a-c719ba9ca99a
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: customer
+                  errorReason: Required block is missing
+            1045-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 32e3372d-5999-67bd-336b-13a53dc59e7d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: account
+                  errorReason: Required block is missing
+            1060-PartnerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 680cd4cd-8907-6d45-4c41-b2e1de61d1b8
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: PartnerID
+                  errorReason: Required Header Field is missing
+            1060-SubscriberId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 772606d2-322d-3990-2dab-ad8ee2a12954
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: SubscriberId
+                  errorReason: Required Header Field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 374741a9-5759-c3e4-2331-6c893182c737
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            1080-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a9c90a91-dcc6-00c3-16a0-06de234569dc
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1080
+                  errorField: account
+                  errorReason: Block contain values more than that is allowed
+            2220-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 140
+                referenceTransactionID: c93e9308-bea3-9bcb-dc42-b8bac713626b
+                transactionStatusDescription: Customer profile not found
+                errorDetails: 
+                  errorCode: 2220
+                  errorField: fdCustomerID
+                  errorReason: Customer profile not found
+            4200-OnlineBankTransactionId:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 420
+                referenceTransactionID: c845acce-d61d-3957-2117-6347750b55a4
+                transactionStatusDescription: Account not ACH-able
+                errorDetails: 
+                  errorCode: 4200
+                  errorField: OnlineBankTransactionId
+                  errorReason: Field contained a bad value
+            4250-Client-Token:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 420
+                referenceTransactionID: d12763c9-73b4-c16c-b35b-ec57861978a4
+                transactionStatusDescription: Unauthorized
+                errorDetails: 
+                  errorCode: 4250
+                  errorField: Client-Token
+                  errorReason: Session time out
+            4410-OnlineBankTransactionId:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 440
+                referenceTransactionID: b1d05ce3-a6d3-7973-be96-59cb6941b023
+                transactionStatusDescription: Other Telecheck Decline
+                errorDetails: 
+                  errorCode: 4410
+                  errorField: OnlineBankTransactionId
+                  errorReason: Field contained a bad value
+            4410-alldatanotenabled:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 440
+                referenceTransactionID: 5299ec97-56d1-ec78-66b3-877be3068edb
+                transactionStatusDescription: Other Telecheck Decline
+                errorDetails: 
+                  errorCode: 4410
+                  errorField: alldatanotenabled
+                  errorReason: alldatanotenabled
+            4500-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 450
+                referenceTransactionID: 94439481-4d8e-4a00-b6a2-6e1c0cce5961
+                transactionStatusDescription: Partner Not Found
+                errorDetails: 
+                  errorCode: 4500
+                  errorField: PartnerID
+                  errorReason: PartnerID not Found
+    401-CPAPI_BANK_VALIDATE:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: 38a47382-9d6d-1aa2-80d0-6b5116229e60
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_BANK_VALIDATE:
+      description: | 
+        Forbidden
+    409-CPAPI_BANK_VALIDATE:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_BANK_VALIDATE:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5110-UCOMM_CLEAR_DATA:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: d41c940b-42ac-24e2-2097-d28b557ee66a
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5110
+                  errorField: UCOMM_CLEAR_DATA
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5340-PublicKeyExpired:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 91cc2a47-bb02-2600-2812-5c072785eb4d
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PublicKey Expired
+                  errorReason: Configuration Error, Please contact customer support
+    #401-ComponentFallbackPayloadSample:
+    #  description: The request cannot be validated.
+    #  content:
+    #    application/json:
+    #      schema:
+    #        $ref: '#/components/schemas/CPAPIGenericResponse'
+    #      examples:
+    #        ComponentFallbackPayloadSample:
+    #          value:
+    #            componentFallBack: "{\r\n  \"transactionStatus\" : \"DECLINED\",\r\n  \"transactionStatusCode\" : 420,\r\n  \"referenceTransactionID\" : \"APIGEE-a-90f-4946-ff14-36aa4b9a6325\",\r\n  \"transactionStatusDescription\" : \"Unauthorized\",\r\n  \"responseVerbiage\" : \"Unauthorized\",\r\n  \"errorDetails\" : [ {\r\n    \"errorCode\" : 4250,\r\n    \"errorField\" : \"Client-Token\",\r\n    \"errorReason\" : \"Session time out\"\r\n  } ]\r\n}"
+    # This is the start of profile add
     200-ProfileAddResponsePayloadSamples:
-      description: The request cannot be validated.
+      description: Success
       content:
         application/json:
           schema:
@@ -2196,29 +3224,188 @@ components:
                 customer:
                   fdCustomerID: CP1GWQ15714280477520000262L7Wymj
                   externalID: Merchant01Consumer65746635
-            ResponsePayloadSample-Declined:
-              value:
-                transactionStatus: DECLINED
-                transactionStatusCode: 409
-                referenceTransactionID: bbb59fe8-492f-9c53-3a30-73637cb2d7d9
-                transactionStatusDescription: Conflict
-                responseVerbiage: Conflict
-                errorDetails:
-                  errorCode: 4910
-                  errorField: externalID
-                  errorReason: ExternalID already used by another Customer
-            ResponsePayloadSample-Error:
-              value:
+    201-CPAPI_CUSTOMER_ADD:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_CUSTOMER_ADD:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_CUSTOMER_ADD:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_CUSTOMER_ADD:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1010-externalID:
+              value: 
                 transactionStatus: ERROR
                 transactionStatusCode: 100
-                referenceTransactionID: 906c517e-5570-4286-86c2-33dc3e0d18cc
+                referenceTransactionID: e8ab47a2-520a-5d33-4e03-253e19e257cb
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: externalID
+                  errorReason: Field did not have a valid format
+            1020-externalID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 02e34833-59b9-8787-5d5d-8dad20e14288
                 transactionStatusDescription: Input is invalid
-                errorDetails:
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: externalID
+                  errorReason: Field contained a bad value
+            1030-externalID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 691b65e6-72b9-94d0-a8b8-b4e01823667d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: externalID
+                  errorReason: Required field did not have a value
+            1035-externalID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d2bdd7e0-62e9-5886-39a9-6dd915b1208d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: externalID
+                  errorReason: Required field is missing
+            1035-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 7c2a2d1d-5e7d-e83e-0670-12cbde98c3a6
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: PassPhase
+                  errorReason: Required field is missing
+            1035-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d7d56946-1967-d841-03ed-88c013e20dd8
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
                   errorCode: 1035
                   errorField: InitializationVector
                   errorReason: Required field is missing
+            1040-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2a65916d-412d-7596-9c4c-b24b9b646298
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: customer
+                  errorReason: Required block did not have a value
+            1045-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2853bd31-5268-3b8e-aa7c-4e9dce20b1c9
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: customer
+                  errorReason: Required block is missing
+            1060-PartnerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2b9c1073-6329-4dc5-3933-ee201c3ba660
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: PartnerID
+                  errorReason: Required Header Field is missing
+            1060-SubscriberId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: e3769c3b-7902-c940-33d8-e6ec87012d68
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: SubscriberId
+                  errorReason: Required Header Field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 45c52543-9779-733d-72ce-bc10a11deecd
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            4500-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 450
+                referenceTransactionID: 75888645-a981-39b3-8a59-3234d112a594
+                transactionStatusDescription: Partner Not Found
+                errorDetails: 
+                  errorCode: 4500
+                  errorField: PartnerID
+                  errorReason: PartnerID not Found
+    401-CPAPI_CUSTOMER_ADD:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: 4a548be5-d3b0-c37c-8a09-4b005e84dcd3
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_CUSTOMER_ADD:
+      description: | 
+        Forbidden
+    409-CPAPI_CUSTOMER_ADD:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_CUSTOMER_ADD:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5120-UCOMM_CUSTOMER_ADD:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: db214a8d-04c0-4cab-9c33-d0aa68a3902a
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5120
+                  errorField: UCOMM_CUSTOMER_ADD
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+    #This is the start of enrollment
     200-EnrollmentResponsePayloadSamples:
-      description: The request cannot be validated.
+      description: Success
       content:
         application/json:
           schema:
@@ -2248,30 +3435,583 @@ components:
                       - validationCode: "10"
                         validationCodeDesc: Bank Validation Status
                         validationCodeStatus: PENDING
-            ResponsePayloadSample-Declined:
-              value:
+    201-CPAPI_ENROLLMENT:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_ENROLLMENT:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_ENROLLMENT:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_ENROLLMENT:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1010-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: de29b7ac-4e8b-a605-48e4-1c2c1754d984
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: fdCustomerID
+                  errorReason: Field did not have a valid format
+            1010-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 20b10e89-de90-ebc9-d846-48c32a165ec7
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: type
+                  errorReason: Field did not have a valid format
+            1010-securityQuestionId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: e4e8ddd4-7e73-2bc8-80d4-3043ba129b62
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: securityQuestionId
+                  errorReason: Field did not have a valid format
+            1010-securityQuestion:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: aa7349d7-d714-1ee2-b5d9-372bd98543a6
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: securityQuestion
+                  errorReason: Field did not have a valid format
+            1010-securityAnswer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 699ae9db-4063-b3e4-22e2-909d9bbdbba1
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: securityAnswer
+                  errorReason: Field did not have a valid format
+            1010-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 04e535b4-c836-40c9-745b-90422e712cb5
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: PassPhase
+                  errorReason: Field did not have a valid format
+            1010-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 33950eb7-e1ea-55d0-ca72-ae3574297cc2
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: InitializationVector
+                  errorReason: Field did not have a valid format
+            1010-partnerId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2396bdce-7ea5-d37a-d1e5-1727bb43846d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: partnerId
+                  errorReason: Field did not have a valid format
+            1010-supplementalId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1ed9190a-4821-1e90-e0bb-3d599ac5a293
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: supplementalId
+                  errorReason: Field did not have a valid format
+            1020-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 6b44714e-d032-70d4-3c2e-0934aba300b3
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: fdCustomerID
+                  errorReason: Field contained a bad value
+            1020-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 88081e38-eecd-5725-4b58-e02edb5a509d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: type
+                  errorReason: Field contained a bad value
+            1020-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d6d50c40-c3e0-bbaa-1180-e803e567c647
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: PassPhase
+                  errorReason: Field contained a bad value
+            1020-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: c4b64018-1389-c78a-37c6-d267c6717568
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: InitializationVector
+                  errorReason: Field contained a bad value
+            1030-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 6a110566-9894-6ed3-a495-c9c7548550c0
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdCustomerID
+                  errorReason: Required field did not have a value
+            1030-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d303911e-a4de-01c8-a4db-1642064743e9
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: type
+                  errorReason: Required field did not have a value
+            1030-securityQuestionId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 07eeddcc-761b-434a-c2ab-93e26aae3c13
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: securityQuestionId
+                  errorReason: Required field did not have a value
+            1030-securityQuestion:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 18e6ec19-340d-58ae-19e5-b23795e98744
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: securityQuestion
+                  errorReason: Required field did not have a value
+            1030-securityAnswer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 648196b0-86e4-e288-05bd-162346125692
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: securityAnswer
+                  errorReason: Required field did not have a value
+            1030-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1e2bb206-bd2a-6c03-b277-1d803e85251b
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: PassPhase
+                  errorReason: Required field did not have a value
+            1030-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: ac34a106-31ae-8d29-e9ac-6526983e2b7e
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: InitializationVector
+                  errorReason: Required field did not have a value
+            1030-aggregatorTransactionId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 8588e283-098c-8502-c308-20c530d84edc
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: aggregatorTransactionId
+                  errorReason: Required field did not have a value
+            1035-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: de3a9b5a-ae56-aa5d-75c5-e9be8babb2bb
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdCustomerID
+                  errorReason: Required field is missing
+            1035-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 6ba61138-05a9-8350-e662-33acb2047ebd
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: type
+                  errorReason: Required field is missing
+            1035-securityQuestionId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: bc7371bb-798d-bb14-31a8-49538c7993ea
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: securityQuestionId
+                  errorReason: Required field is missing
+            1035-securityQuestion:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b0405e47-15dc-4517-a515-25a43a523588
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: securityQuestion
+                  errorReason: Required field is missing
+            1035-securityAnswer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 76ce1d8a-744d-e0ae-c71c-4ceb73491c10
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: securityAnswer
+                  errorReason: Required field is missing
+            1035-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 10b54631-805e-c5d7-0aa9-68d27e9e0148
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: PassPhase
+                  errorReason: Required field is missing
+            1035-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2b05a16c-dbca-9886-0d5b-bdcb8bc43687
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: InitializationVector
+                  errorReason: Required field is missing
+            1040-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 8a91ad24-88c8-a602-ab1b-6a76ce107d69
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: account
+                  errorReason: Required block did not have a value
+            1040-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 84b69870-cbb6-2485-d441-42d90d6a3b99
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: customer
+                  errorReason: Required block did not have a value
+            1045-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 0d4eb203-8094-28b5-5b44-0a7e491b1ec7
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: account
+                  errorReason: Required block is missing
+            1045-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: e67d7a59-ddc9-0752-eab5-b36a8408dce0
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: customer
+                  errorReason: Required block is missing
+            1060-PartnerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a2de9b92-a04b-c56d-a063-82318b42d1c0
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: PartnerID
+                  errorReason: Required Header Field is missing
+            1060-SubscriberId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b6065b1c-a343-c63e-d290-bc29a1d08839
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: SubscriberId
+                  errorReason: Required Header Field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d1245437-94e0-0042-6eb2-eac4cde76518
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            1080-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a8404b6a-9776-0dd0-d022-c317c1ea6636
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1080
+                  errorField: account
+                  errorReason: Block contain values more than that is allowed
+            2210-fdCustomerID:
+              value: 
                 transactionStatus: DECLINED
-                transactionStatusCode: "140"
-                referenceTransactionID: d1175022-2eb3-4e8a-bd47-0881cbea6887
+                transactionStatusCode: 140
+                referenceTransactionID: ba91256a-cbb2-7260-2010-6830c91c6288
                 transactionStatusDescription: The Customer has already enrolled the maximum allowable number of accounts
-                responseVerbiage: The Customer has already enrolled the maximum allowable number of accounts
-                errorDetails:
-                  errorCode: "2210"
+                errorDetails: 
+                  errorCode: 2210
                   errorField: fdCustomerID
                   errorReason: The Customer has already enrolled the maximum allowable number of accounts.
-            ResponsePayloadSample-Error:
-              value:
+            2220-fdCustomerID:
+              value: 
                 transactionStatus: ERROR
-                transactionStatusCode: "100"
-                referenceTransactionID: 5b50ac24-3013-4e2e-8f9f-314dae8e5748
-                transactionStatusDescription: Input is invalid
-                responseVerbiage: Input is invalid
-                errorDetails:
-                  errorCode: "1010"
-                  errorField: RoutingNumber
-                  errorReason: Field did not have a valid format
+                transactionStatusCode: 140
+                referenceTransactionID: 7295ae18-495a-16b2-0d3c-40ba246c9897
+                transactionStatusDescription: Customer profile not found
+                errorDetails: 
+                  errorCode: 2220
+                  errorField: fdCustomerID
+                  errorReason: Customer profile not found
+            400-nan:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 400
+                referenceTransactionID: 8d438676-86c3-1bd9-02a2-12437370840a
+                transactionStatusDescription: Bad Request
+                errorDetails: 
+                  errorCode: 400
+                  errorField: nan
+                  errorReason: Bad Request. Either required parameters are missing or message Format is incorrect
+            4250-Client-Token:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 420
+                referenceTransactionID: 3e728538-1975-1316-88ac-04bd4c56d199
+                transactionStatusDescription: Unauthorized
+                errorDetails: 
+                  errorCode: 4250
+                  errorField: Client-Token
+                  errorReason: Session time out
+            4500-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 450
+                referenceTransactionID: 809e4db4-353e-80e7-2a86-82abd450c376
+                transactionStatusDescription: Partner Not Found
+                errorDetails: 
+                  errorCode: 4500
+                  errorField: PartnerID
+                  errorReason: PartnerID not Found
+    401-CPAPI_ENROLLMENT:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            401-nan:
+              value: 
+                transactionStatus: 
+                transactionStatusCode: 401
+                referenceTransactionID: 2229da04-ae59-c994-d927-d0de759bbb6d
+                transactionStatusDescription: Unauthorized
+                errorDetails: 
+                  errorCode: 401
+                  errorField: nan
+                  errorReason: Unauthorized
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: c896017d-5bec-9aa9-46b6-035590033772
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_ENROLLMENT:
+      description: | 
+        Forbidden
+    409-CPAPI_ENROLLMENT:
+      description: | 
+        Indicates a conflict with the current state of a resource
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4920-ConnectPayPaymentNumber:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 409
+                referenceTransactionID: 86d5501a-ae44-86ba-3773-4dc002110ac8
+                transactionStatusDescription: Conflict
+                errorDetails: 
+                  errorCode: 4920
+                  errorField: ConnectPayPaymentNumber
+                  errorReason: ConnectPayPaymentNumber is already enrolled
+    500-CPAPI_ENROLLMENT:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5110-UCOMM_CLEAR_DATA:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: a1b22561-8107-1ae8-2831-3453242242bc
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5110
+                  errorField: UCOMM_CLEAR_DATA
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5130-UCOMM_ADD:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 8818a789-29a6-3d04-0e3e-5a66201c2468
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5130
+                  errorField: UCOMM_ADD
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5140-UCOMM_GET_ALL_ACCOUNT:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 209e5004-1d10-234c-0ab5-c2082ca62433
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5140
+                  errorField: UCOMM_GET_ALL_ACCOUNT
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5210-MIE_ENROLLMENT:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 000b9123-3682-1490-c7e6-36c293801562
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5210
+                  errorField: MIE_ENROLLMENT
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5230-MIE_CLOSE:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 0a54b13d-00e1-b849-d645-8bb966a876c1
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5230
+                  errorField: MIE_CLOSE
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5340-PartnerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: b95a1880-0bd8-3818-c374-1208a84ab5c2
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PartnerID
+                  errorReason: Configuration Error, Please contact customer support
+            5340-SubscriberId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 07c1560a-a112-6467-0a58-131dc3b93b6b
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: SubscriberId
+                  errorReason: Configuration Error, Please contact customer support
+            5340-AES:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 00edc4b0-38e6-455b-d699-6967bb3d7343
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: AES
+                  errorReason: Configuration Error, Please contact customer support
+            5340-PublicKeyExpired:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 13bd93c8-4c50-76e9-4cc9-30d82212960e
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PublicKey Expired
+                  errorReason: Configuration Error, Please contact customer support
+    # This is the start of Get Data
     200-GetDataResponsePayloadSamples:
-      description: The request cannot be validated.
+      description: Success
       content:
         application/json:
           schema:
@@ -2349,19 +4089,358 @@ components:
                       - genericFlag1: Y
                         genericFlag2: N
                         genericFlag3: N
-            ResponsePayloadSample-Error:
-              value:
+    201-CPAPI_GET_DATA:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_GET_DATA:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_GET_DATA:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_GET_DATA:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1010-Masked:
+              value: 
                 transactionStatus: ERROR
                 transactionStatusCode: 100
-                referenceTransactionID: 906c517e-5570-4286-86c2-33dc3e0d18cc
-                transactionStatusDescription: Input is invalid
-                responseVerbiage: Input is invalid
-                errorDetails:
+                referenceTransactionID: 5510cee3-56d6-1d52-10a2-391bb5a4a072
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: Masked
+                  errorReason: Field did not have a valid format
+            1010-Fetch:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b2dd069e-58ac-7158-5356-3626056eea14
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: Fetch
+                  errorReason: Field did not have a valid format
+            1010-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a9996595-ab1c-4041-d9a7-59b724536c4e
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: type
+                  errorReason: Field did not have a valid format
+            1010-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: baed45e9-184b-8a40-8bda-ca0a378e2c8b
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: fdCustomerID
+                  errorReason: Field did not have a valid format
+            1020-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 039941e4-a1dc-8aa6-e152-cd8c8e361d44
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: type
+                  errorReason: Field contained a bad value
+            1020-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 0cd7a570-4444-12d6-e515-94a3ccd45a88
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: fdCustomerID
+                  errorReason: Field contained a bad value
+            1030-Masked:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d9791268-2dce-a987-cd2c-23b3d5b0beb3
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
                   errorCode: 1030
                   errorField: Masked
                   errorReason: Required field did not have a value
+            1030-Fetch:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d7dca972-71b3-28bc-18b6-d442281cd99d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: Fetch
+                  errorReason: Required field did not have a value
+            1030-fdAccountID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 10ec7dba-022d-082a-a7db-65972c0c2895
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdAccountID
+                  errorReason: Required field did not have a value
+            1030-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 568d8194-b6d4-e217-06ba-9c67bb8c779a
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: type
+                  errorReason: Required field did not have a value
+            1030-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 7cba959d-1852-1803-aa4e-e7aeca187588
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdCustomerID
+                  errorReason: Required field did not have a value
+            1035-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 7d123555-319c-625c-7c4d-990441d93874
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: type
+                  errorReason: Required field is missing
+            1035-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 26bc90c6-8534-1454-8382-a815a0627b15
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdCustomerID
+                  errorReason: Required field is missing
+            1040-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2c121246-5a11-12c7-6d88-b3bce1c2eab0
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: account
+                  errorReason: Required block did not have a value
+            1040-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b0dbe032-c492-5e1c-2ac8-482ac91abc17
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1040
+                  errorField: customer
+                  errorReason: Required block did not have a value
+            1045-CPAPIAccount:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a959e482-a18b-7498-20ea-6b059eba403e
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: CPAPIAccount
+                  errorReason: Required block is missing
+            1045-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 2eac9126-ed4c-047a-d3ae-2364900c1b74
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: account
+                  errorReason: Required block is missing
+            1045-customer:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 126b3a66-ec08-03dc-d343-9e825752cc6a
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: customer
+                  errorReason: Required block is missing
+            1045-FetchAccountDetails:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 808e9305-51eb-07ba-1cac-7229371d02ca
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1045
+                  errorField: FetchAccountDetails
+                  errorReason: Required block is missing
+            1060-SubscriberId:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 8be47774-2805-a0c4-9cc5-68e11a610aa7
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: SubscriberId
+                  errorReason: Required Header Field is missing
+            1060-PartnerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: c8a292a6-b185-a9e4-d727-6de02222adab
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: PartnerID
+                  errorReason: Required Header Field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 66408d3d-3316-2286-6086-82d0b4d73894
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            1070-NONCE:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 4c77257b-b6c8-d5da-1741-cb4037ed4804
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1070
+                  errorField: NONCE
+                  errorReason: The·URI Param is Missing or Invalid
+            1080-account:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 19638396-b61c-643b-6d67-079e26a9a7aa
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1080
+                  errorField: account
+                  errorReason: Block contain values more than that is allowed
+            2020-ConnectPayPaymentNumber:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 120
+                referenceTransactionID: 4596351d-4db2-3057-2637-4ce47372a316
+                transactionStatusDescription: Consumer Cannot Be Validated
+                errorDetails: 
+                  errorCode: 2020
+                  errorField: ConnectPayPaymentNumber
+                  errorReason: Original ConnectPayPaymentNumber is not Active
+            2220-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 140
+                referenceTransactionID: 6abbecbc-6ae6-7264-0731-88bda072add2
+                transactionStatusDescription: Customer profile not found
+                errorDetails: 
+                  errorCode: 2220
+                  errorField: fdCustomerID
+                  errorReason: Customer profile not found
+            2310-fdAccountID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 150
+                referenceTransactionID: ac4a8a10-2cd3-a622-ab70-596176b065be
+                transactionStatusDescription: Account detail not found
+                errorDetails: 
+                  errorCode: 2310
+                  errorField: fdAccountID
+                  errorReason: Account detail not found
+            4500-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 450
+                referenceTransactionID: 6ca4d454-996a-8777-ac60-7d461d38ada8
+                transactionStatusDescription: Partner Not Found
+                errorDetails: 
+                  errorCode: 4500
+                  errorField: PartnerID
+                  errorReason: PartnerID not Found
+    401-CPAPI_GET_DATA:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: d3281620-e8b4-4c2e-0a3e-d3d5a7485a99
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_GET_DATA:
+      description: | 
+        Forbidden
+    409-CPAPI_GET_DATA:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_GET_DATA:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5110-UCOMM_CLEAR_DATA:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: cb37650d-a263-903c-873d-c03145505238
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5110
+                  errorField: UCOMM_CLEAR_DATA
+                  errorReason: Please try again after some time, If issue persist please contact customer support
+            5340-PublicKeyExpired:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: b2c73686-dc69-e37d-8277-27b816d3750a
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PublicKey Expired
+                  errorReason: Configuration Error, Please contact customer support
+    # This is the start of Get Account List
     200-GetAccountListResponsePayloadSamples:
-      description: The request cannot be validated.
+      description: Success
       content:
         application/json:
           schema:
@@ -2406,30 +4485,158 @@ components:
                         accountNumber: "******4196"
                         bankName: Chase
                         corporateAccountFlag: personal_check
-            ResponsePayloadSample-Declined:
-              value:
-                transactionStatus: DECLINED
-                transactionStatusCode: "401"
-                referenceTransactionID: 43d3821f-2c9e-46e1-b12b-eb63ee09f8bc
-                transactionStatusDescription: Unauthorize
-                responseVerbiage: Unauthorize
-                errorDetails:
-                  errorCode: "4550"
-                  errorField: PartnerID
-                  errorReason: Partner is not opt for this service
-            ResponsePayloadSample-Error:
-              value:
+    201-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1030-InitializationVector:
+              value: 
                 transactionStatus: ERROR
-                transactionStatusCode: "140"
-                referenceTransactionID: f2155555-2eb4-469e-8885-3c97d254b8ef
+                transactionStatusCode: 100
+                referenceTransactionID: 9261b336-9dd3-2874-46c1-ddc6c4407771
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: InitializationVector
+                  errorReason: Required field did not have a value
+            1030-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 1a588cd6-d595-e723-6668-0161cd74e701
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: PassPhase
+                  errorReason: Required field did not have a value
+            1030-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: a8d011b9-add2-9aea-eca7-cdc6b37b4908
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdCustomerID
+                  errorReason: Required field did not have a value
+            1035-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b9eb0d1b-37d2-c89c-8d29-5e01619a238d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: InitializationVector
+                  errorReason: Required field is missing
+            1035-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 74e85d45-6716-9204-be6a-a6e1eec911b3
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: PassPhase
+                  errorReason: Required field is missing
+            1035-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b83b8125-e75c-5547-0d2a-6ad11360c112
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdCustomerID
+                  errorReason: Required field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: bccddea8-23dc-b138-e950-15171042e574
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            2220-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 140
+                referenceTransactionID: d3c4e509-961c-5a19-1bec-63a1db672117
                 transactionStatusDescription: Customer profile not found
-                responseVerbiage: Customer profile not found
-                errorDetails:
-                  errorCode: "2220"
+                errorDetails: 
+                  errorCode: 2220
                   errorField: fdCustomerID
                   errorReason: Customer profile not found
+            2310-fdAccountID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 150
+                referenceTransactionID: 26635304-80e2-1eaa-4666-eec36c3b8565
+                transactionStatusDescription: Account detail not found
+                errorDetails: 
+                  errorCode: 2310
+                  errorField: fdAccountID
+                  errorReason: Account detail not found
+    401-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: 00936c15-9875-6328-540b-e14ede372ee6
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        Forbidden
+    409-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_GET_ACCOUNT_LIST:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5340-PublicKeyExpired:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 468440c0-22ba-9c87-9862-d983e030bd70
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PublicKey Expired
+                  errorReason: Configuration Error, Please contact customer support
+    # This is the start of Get Account Details
     200-GetAccountDetailsResponsePayloadSamples:
-      description: The request cannot be validated.
+      description: Success
       content:
         application/json:
           schema:
@@ -2454,28 +4661,216 @@ components:
                         accountNumber: "******2532"
                         bankName: "Bank Of America"
                         corporateAccountFlag: personal_check
-            ResponsePayloadSample-Declined:
-              value:
-                transactionStatus: DECLINED
-                transactionStatusCode: "401"
-                referenceTransactionID: 43d3821f-2c9e-46e1-b12b-eb63ee09f8bc
-                transactionStatusDescription: Unauthorize
-                responseVerbiage: Unauthorize
-                errorDetails:
-                  errorCode: "4550"
-                  errorField: PartnerID
-                  errorReason: Partner is not opt for this service
-            ResponsePayloadSample-Error:
-              value:
+    201-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        The request was successfully fulfilled and resulted in one or multiple new resources being created
+    202-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        The request has been accepted for processing, but the processing has not been finished yet
+    204-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        The request has succeeded, but the client doesn't need to navigate away from its current page
+    400-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        Bad request
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            1010-type:
+              value: 
                 transactionStatus: ERROR
-                transactionStatusCode: "150"
-                referenceTransactionID: 43d3821f-2c9e-46e1-b12b-eb63ee09f8bc
+                transactionStatusCode: 100
+                referenceTransactionID: 2998c021-9d9b-20a0-ec91-d4a94e5da751
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1010
+                  errorField: type
+                  errorReason: Field did not have a valid format
+            1020-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 5e391130-76d4-103c-0734-77bcd6ccdc47
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1020
+                  errorField: type
+                  errorReason: Field contained a bad value
+            1030-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: b38a6a06-9453-dc6c-48e1-398083e9063e
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: PassPhase
+                  errorReason: Required field did not have a value
+            1030-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 92172ee8-9890-d85d-9a5d-0cce4880c74e
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: InitializationVector
+                  errorReason: Required field did not have a value
+            1030-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 253e64db-7230-26b8-34bc-8a25719a505d
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: type
+                  errorReason: Required field did not have a value
+            1030-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 30e32d6d-d002-a884-0059-022354a60719
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdCustomerID
+                  errorReason: Required field did not have a value
+            1030-fdAccountID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 35e82191-79c1-bbda-aa5e-d270887d62c7
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1030
+                  errorField: fdAccountID
+                  errorReason: Required field did not have a value
+            1035-PassPhase:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 488373ba-a134-2082-b0ea-59581a46834e
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: PassPhase
+                  errorReason: Required field is missing
+            1035-InitializationVector:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: e7420ce8-3a1d-e85b-4529-2e5095c18baa
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: InitializationVector
+                  errorReason: Required field is missing
+            1035-type:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: d554e853-61d7-b400-76a0-57514cdc4ca5
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: type
+                  errorReason: Required field is missing
+            1035-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: dbb7487d-d6c6-dc92-8266-93107dc2e3e5
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdCustomerID
+                  errorReason: Required field is missing
+            1035-fdAccountID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 4b27b7e8-32c0-a196-dd19-2d66431e28bc
+                transactionStatusDescription: Input is invalid 
+                errorDetails: 
+                  errorCode: 1035
+                  errorField: fdAccountID
+                  errorReason: Required field is missing
+            1060-Client-Token:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 100
+                referenceTransactionID: 5b4e92a3-b525-2156-7756-5e17eb7e5187
+                transactionStatusDescription: Input is invalid
+                errorDetails: 
+                  errorCode: 1060
+                  errorField: Client-Token
+                  errorReason: Required Header Field is missing
+            2220-fdCustomerID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 140
+                referenceTransactionID: 82423be5-6867-0986-dcd2-ca6e60dd631c
+                transactionStatusDescription: Customer profile not found
+                errorDetails: 
+                  errorCode: 2220
+                  errorField: fdCustomerID
+                  errorReason: Customer profile not found
+            2310-fdAccountID:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 150
+                referenceTransactionID: bad2677e-64a8-c863-99b2-9251c6256187
                 transactionStatusDescription: Account detail not found
-                responseVerbiage: Account detail not found
-                errorDetails:
-                  errorCode: "2310"
+                errorDetails: 
+                  errorCode: 2310
                   errorField: fdAccountID
                   errorReason: Account detail not found
+    401-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        Unauthorized
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            4550-PartnerID:
+              value: 
+                transactionStatus: DECLINED
+                transactionStatusCode: 401
+                referenceTransactionID: a1ab388c-0db4-674a-b7d9-4d2769297d48
+                transactionStatusDescription: Unauthorize
+                errorDetails: 
+                  errorCode: 4550
+                  errorField: PartnerID
+                  errorReason: Partner is not opt for this service
+    403-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        Forbidden
+    409-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        Indicates a conflict with the current state of a resource
+    500-CPAPI_GET_ACCOUNT_DETAILS:
+      description: | 
+        An unexpected server error occured
+      content: 
+        application/json: 
+          schema: 
+            $ref: '#components/schemas/CPAPIGenericResponse'
+          examples: 
+            5340-PublicKeyExpired:
+              value: 
+                transactionStatus: ERROR
+                transactionStatusCode: 500
+                referenceTransactionID: 4526265e-cd33-cb18-321b-9241424caa58
+                transactionStatusDescription: General Error
+                errorDetails: 
+                  errorCode: 5340
+                  errorField: PublicKey Expired
+                  errorReason: Configuration Error, Please contact customer support
+    # This is the start of Transactions 
     200-TransactionResponsePayloadSamples:
       description: Successful ACH Purchase response.
       content:

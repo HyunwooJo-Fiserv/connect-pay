@@ -1,4 +1,5 @@
 # Implementation Guide  
+> Please refer to the prerequisites page prior to making any calls. The prerequisites page can be referred on the [link]() here.
 ## How to Utilize API
 This section will guide the developer on how to implement one of ConnectPay's APIs. We will use the "Add Consumer Profile" API for this example as well as the "Create Session Token" API as it is a mandatory substep to use most of ConnectPay's API.
 
