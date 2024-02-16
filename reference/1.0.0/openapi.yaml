@@ -2622,16 +2622,6 @@ components:
                   errorCode: 2220
                   errorField: fdCustomerID
                   errorReason: Customer profile not found
-            2220-fdCustomerID:
-              value: 
-                transactionStatus: ERROR
-                transactionStatusCode: 140
-                referenceTransactionID: a8aec5e3-aabe-d0c7-659d-7968b5142b6b
-                transactionStatusDescription: Customer profile not found
-                errorDetails: 
-                  errorCode: 2220
-                  errorField: fdCustomerID
-                  errorReason: Customer profile not found
             4250-Client-Token:
               value: 
                 transactionStatus: DECLINED
